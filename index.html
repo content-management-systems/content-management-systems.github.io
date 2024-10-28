@@ -15,6 +15,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .container {
+        margin: 2em;
+        border-radius: 1em;
+        background-color: #fff;
+        color: #333;
+        padding: 1em;
+      }
       h2 {
         color: #8C8F8A;
       }
@@ -36,10 +50,14 @@
         margin: 1em;
         border-top: 1px solid #eee;
       }
+      .clients {
+         max-width: 100%;
+        height: auto;
+      }
       @media only screen and (max-width: 768px) {
         .container {
-          margin: 1em;
-          padding: 1em;
+          margin: 0;
+          border-radius: 0;
         }
         h1 {
           font-size: 1.25em;
@@ -53,12 +71,12 @@
       }
     </style>
   </head>
-  <body style="background-color: #333; text-align: center; font-family: sans-serif;" data-new-gr-c-s-check-loaded="9.73.0" data-gr-ext-installed="">
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M559TVXX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div style="margin: 2em; border-radius: 1em; background-color: #fff; color: #333; padding: 1em;">
+    <div class="container">
       <img src="logo-black-500x500.png" width="250">
       <h1>Content Management Systems Pty Ltd</h1>
       <h2>Everything for content management systems.</h2>
@@ -85,7 +103,7 @@
       <h2>It can be complicated. <span/>We can help.</h2>
       <p>Solutions for content creators, small businesses, medium businesses and enterprises.</p>
       <p>Experience with some of Australia's and the world's largest brands.</p>
-      <img src="clients-more.png" style="max-width: 100%; height: auto;"/>
+      <img src="clients-more.png" class="clients"/>
       <footer>
         <p>Gold Coast, Australia · ACN 669 359 433</p>
       </footer>
